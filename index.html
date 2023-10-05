@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>机器码转换</title>
+</head>
+<body>
+  <label for="length">机器码长度：</label>
+  <input type="number" id="length" value="8" min="2" max="32">
+  <br>
+  转换基准：
+  <br>
+  <input type="radio" id="trueValueRadio" name="base" checked>
+  <label for="trueValue">真值：</label>
+  <input type="text" id="trueValue">
+  <br>
+  <input type="radio" id="originalCodeRadio" name="base">
+  <label for="originalCode">原码：</label>
+  <input type="text" id="originalCode">
+  <br>
+  <input type="radio" id="inverseCodeRadio" name="base">
+  <label for="inverseCode">反码：</label>
+  <input type="text" id="inverseCode">
+  <br>
+  <input type="radio" id="complementCodeRadio" name="base">
+  <label for="complementCode">补码：</label>
+  <input type="text" id="complementCode">
+  <br>
+  <button onclick="convertCode()">转换</button>
+</body>
+<script src="converter.js"></script>
+</html>
